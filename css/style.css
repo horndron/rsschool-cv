@@ -8,7 +8,9 @@ body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+img {
+    max-width: 100%;
+}
 .link,
 a {
     position: relative;
@@ -81,6 +83,7 @@ p.subtitle {
     font-size: 1.3em;
     font-style: italic;
 }
+.works,
 .skills,
 #contacts {
     padding: 80px 0;
@@ -96,6 +99,10 @@ h2 {
 #contacts a {
     flex-direction: column;
 }
+footer .d-flex,
+.courses .d-flex,
+.works .d-flex,
+.code-example .d-flex,
 .skills .d-flex,
 #contacts .d-flex{
     justify-content: space-between;
@@ -122,4 +129,39 @@ h2 {
 .skills .item {
     width: 25%;
     margin-bottom: 30px;
+}
+.courses,
+.code-example {
+    padding: 80px 0;
+}
+.code-example .item {
+    width: 45%;
+}
+pre {
+    margin: 10px 0;
+    padding: 15px;
+    background: #eee;
+}
+h3 {
+    margin-bottom: 10px;
+}
+.works a {
+    width: 31%;
+    margin-bottom: 30px;
+}
+.courses .container {
+    width: 750px;
+}
+footer {
+    padding: 25px 0 10px;
+    color: #fff;
+    background: #212121;
+}
+footer .github {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+footer .github img {
+    margin-right: 7px;
 }
