@@ -79,22 +79,22 @@ function toJadenCase($string)
 
 I have made the following sites:
 
-https://xn--80abcmpacmb0ag3e.xn--p1ai/
-https://advotop.ru/
-https://prosto-krd.ru/
-https://cppkkrd.ru/
+https://xn--80abcmpacmb0ag3e.xn--p1ai/  
+https://advotop.ru/  
+https://prosto-krd.ru/  
+https://cppkkrd.ru/  
 
 
 ***
 
 ## Courses:  
-HTML and CSS on https://htmlacademy.ru/ (complete)
-PHP, JS, Jquery on https://www.sololearn.com/ (complete)
-Javascript on https://learn.javascript.ru/ (processed)
+HTML and CSS on https://htmlacademy.ru/ (complete)  
+PHP, JS, Jquery on https://www.sololearn.com/ (complete)  
+Javascript on https://learn.javascript.ru/ (processed)  
 
 ***
 
 ## Languages:
 
-1 English - A1
-2 Russian - Native
+1 English - A1  
+2 Russian - Native  
