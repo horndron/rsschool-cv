@@ -8,7 +8,7 @@
 Phone: [+7 (938) 411-14-10](tel:+79384111410)  
 Mail: [horndron@yandex.ru](mailto:horndron@yandex.ru)  
 Telegram: [@horndron](https://t.me/horndron)  
-[vkontakte](https://vk.com/maimaha)  
+[vkontakte](https://vk.com/horndron)  
 [github](https://github.com/horndron)  
 
 ***
