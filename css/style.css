@@ -115,6 +115,31 @@ footer .d-flex,
     margin: 10px 0;
     color: #ffe840;
 }
+
+@media (max-width:767px) {
+    #contacts .item {
+        width: 26%;
+        padding: 0 15px;
+    }
+}
+@media (max-width:699px) {
+    #contacts .item {
+        width: 30%;
+    }
+}
+@media (max-width:599px) {
+    #contacts .d-flex{
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #contacts .item {
+        width: 49.99%;
+    }
+}
+
+
+
 .text-center {
     text-align: center;
 }
@@ -130,6 +155,13 @@ footer .d-flex,
     width: 25%;
     margin-bottom: 30px;
 }
+
+@media (max-width:499px) {
+    .skills .item { 
+        width: 49.99%;
+    }
+}
+
 .courses,
 .code-example {
     padding: 80px 0;
@@ -142,6 +174,25 @@ pre {
     padding: 15px;
     background: #eee;
 }
+
+@media (max-width:767px) {
+    .code-example .item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:349px) {
+    pre {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+@media (max-width:299px) {
+    pre {
+        font-size: 12.5px;
+    }
+}
+
 h3 {
     margin-bottom: 10px;
 }
@@ -149,9 +200,32 @@ h3 {
     width: 31%;
     margin-bottom: 30px;
 }
+
+@media (max-width:699px) {
+    .works a {
+        width: 47%;
+        margin-bottom: 20px;
+    }
+}
+
 .courses .container {
     width: 750px;
 }
+.courses .item {
+    margin-bottom: 20px;
+}
+
+@media (max-width:379px) {
+    .courses .d-flex {
+        max-width: 190px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .courses .item {
+        width: 100%;
+    }
+}
+
 footer {
     padding: 25px 0 10px;
     color: #fff;
@@ -165,3 +239,5 @@ footer .github {
 footer .github img {
     margin-right: 7px;
 }
+
+
