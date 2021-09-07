@@ -65,6 +65,7 @@ header {
 
 .circle{
     border-radius: 50%;
+    height: auto;
 }
 header .down {
     display: inline-block;
