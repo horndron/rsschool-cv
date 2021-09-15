@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     background: #FFE840;
@@ -24,6 +27,9 @@ a {
     width: 0%;
     background-color: #ffe840;
     transition: width .3s ease-in-out;
+}
+.main-menu .link:after {
+    background-color: #000;
 }
 a:hover { 
     color: #000;
@@ -55,16 +61,97 @@ a:hover {
 
 
 header {
-    min-height: 100vh;
     text-align: center;
 }
 
-.me {
-    padding: 25px;
+.main-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(255, 255, 255, 0.9);
+    border-bottom: 1px solid #212121;
+    z-index: 10;   
+}
+.main-menu nav {
+    justify-content: space-between;
 }
 
+.main-menu a {
+    padding: 10px 15px;
+    color: #000;
+}
+
+.nav-close,
+#mobile-menu {
+    display: none;
+}
+#mobile-menu{
+    background: #fff;   
+}
+
+
+
+
+@media (max-width:767px) {
+    .nav-close,
+    #mobile-menu  {
+        display: block;
+        margin-left: auto;
+    }
+    .main-menu {
+        border: none;
+        background: none;
+    }
+    .nav-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: none;
+        border: none;
+    }
+    .main-menu nav {
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        margin: 0;
+        right: -300px;
+        padding: 15px 20px;
+        width: 300px;
+        height: 100%;
+        transition: right 0.3s;
+        background: #fff;
+        z-index: 200;
+    }
+    .main-menu nav.open {
+        right: 0;
+    }
+    body.open-menu .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgb(0, 0, 0, 0.5);
+        z-index:9;
+    }
+}
+
+
+
+.me {
+    width: 100%;
+    padding: 90px 25px 25px; 
+}
+.me h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
 .circle{
     border-radius: 50%;
+    height: auto;
 }
 header .down {
     display: inline-block;
@@ -115,6 +202,31 @@ footer .d-flex,
     margin: 10px 0;
     color: #ffe840;
 }
+
+@media (max-width:767px) {
+    #contacts .item {
+        width: 26%;
+        padding: 0 15px;
+    }
+}
+@media (max-width:699px) {
+    #contacts .item {
+        width: 30%;
+    }
+}
+@media (max-width:599px) {
+    #contacts .d-flex{
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #contacts .item {
+        width: 49.99%;
+    }
+}
+
+
+
 .text-center {
     text-align: center;
 }
@@ -130,6 +242,13 @@ footer .d-flex,
     width: 25%;
     margin-bottom: 30px;
 }
+
+@media (max-width:499px) {
+    .skills .item { 
+        width: 49.99%;
+    }
+}
+
 .courses,
 .code-example {
     padding: 80px 0;
@@ -142,6 +261,25 @@ pre {
     padding: 15px;
     background: #eee;
 }
+
+@media (max-width:767px) {
+    .code-example .item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:349px) {
+    pre {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+@media (max-width:299px) {
+    pre {
+        font-size: 12.5px;
+    }
+}
+
 h3 {
     margin-bottom: 10px;
 }
@@ -149,9 +287,32 @@ h3 {
     width: 31%;
     margin-bottom: 30px;
 }
+
+@media (max-width:699px) {
+    .works a {
+        width: 47%;
+        margin-bottom: 20px;
+    }
+}
+
 .courses .container {
     width: 750px;
 }
+.courses .item {
+    margin-bottom: 20px;
+}
+
+@media (max-width:379px) {
+    .courses .d-flex {
+        max-width: 190px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .courses .item {
+        width: 100%;
+    }
+}
+
 footer {
     padding: 25px 0 10px;
     color: #fff;
@@ -164,4 +325,8 @@ footer .github {
 }
 footer .github img {
     margin-right: 7px;
+}
+
+.hljs {
+    background: none;
 }
