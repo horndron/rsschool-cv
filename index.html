@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/github.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <link rel="stylesheet" href="css/style.css">
     <title>Andrey Filippov CV</title>
 </head>
@@ -105,19 +109,20 @@
                         <h3>Codewars KATA JS</h3>
                         <a href="https://www.codewars.com/kata/554b4ac871d6813a03000035" target="_blank">Highest and Lowest</a>
                         <pre>
-                            <code>
-function highAndLow(numbers){
+                            <code class='language-javascript'>
+function highAndLow(numbers) {
     numbers = numbers.split(' ');
     let min = numbers[0];
     let max = numbers[0];
     for (let i = 1; i < numbers.length; i++) {
-      if(+numbers[i] > +max) {
+      if (+numbers[i] > +max) {
         max = numbers[i];
       }
-      if(+numbers[i] < +min) {
+      if (+numbers[i] < +min) {
         min = numbers[i];
       }
     }
+
     return max + ' ' + min;
   }
                             </code>
@@ -127,14 +132,15 @@ function highAndLow(numbers){
                         <h3>Codewars KATA PHP</h3>
                         <a href="https://www.codewars.com/kata/5390bac347d09b7da40006f6" target="_blank">Jaden Casing Strings</a>
                         <pre>
-                            <code>
+                            <code class="language-php">
 function toJadenCase($string) 
 {
     $arr = explode(" ", $string);
-    foreach($arr as &$value ){
+    foreach ($arr as &$value ) {
         $value = ucfirst($value);
     }
     $string = implode(" ", $arr);
+
     return $string;
 }
                             </code>
