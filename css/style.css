@@ -246,9 +246,7 @@ footer .d-flex,
     width: 25%;
     margin-bottom: 30px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 
 @media (max-width:499px) {
     .skills .item { 
@@ -256,10 +254,11 @@ footer .d-flex,
     }
 }
 
->>>>>>> 80d6de7 (feat: add menu, file index.js and images for mobile menu)
+
 .courses,
 .code-example {
-=======
+
+}
 
 @media (max-width:499px) {
     .skills .item { 
@@ -282,7 +281,6 @@ iframe {
 
 
 .courses {
->>>>>>> 0d16598 (feat: add video section and styles for this block)
     padding: 80px 0;
 }
 .code-example .item {
