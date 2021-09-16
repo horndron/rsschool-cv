@@ -54,78 +54,90 @@
         <section id="contacts">
             <div class="container">
                 <h2>Contacts</h2>
-                <div class="d-flex align-items-center">
-                    <p class="item adress link">
-                        <img src="images/planet-earth.svg" alt="location">
-                        <span>Krasnodar, Russia</span>
-                    </p>
-                    <a class="item phone link" href="tel:+79384111410">
-                        <img src="images/smartphone.svg" alt="phone">
-                        <span>+7 (938) 411-14-10</span>
-                    </a>
-                    <a class="item mail link" href="mailto:horndron@yandex.ru">
-                        <img src="images/email.svg" alt="email">
-                        <span>horndron@yandex.ru</span>
-                    </a>
-                    <a class="item link" href="https://t.me/horndron">
-                        <img src="images/telegram.svg" alt="telegramm">
-                        <span>@horndron</span>
-                    </a>
-                    <a class="item link" href="https://vk.com/horndron">
-                        <img src="images/vk.svg" alt="vk.com">
-                        <span>vkontakte</span>
-                    </a>
-                    <a class="item link" href="https://github.com/horndron">
-                        <img src="images/github.svg" alt="github">
-                        <span>@horndron</span>
-                    </a>
-                </div>
+                <ul class="d-flex align-items-center">
+                    <li class='item'>
+                        <p class="adress link">
+                            <img src="images/planet-earth.svg" alt="location">
+                            <span>Krasnodar, Russia</span>
+                        </p>
+                    </li>
+                    <li class='item'>
+                        <a class="phone link" href="tel:+79384111410">
+                            <img src="images/smartphone.svg" alt="phone">
+                            <span>+7 (938) 411-14-10</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="mail link" href="mailto:horndron@yandex.ru">
+                            <img src="images/email.svg" alt="email">
+                            <span>horndron@yandex.ru</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="https://t.me/horndron">
+                            <img src="images/telegram.svg" alt="telegramm">
+                            <span>@horndron</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a class="link" href="https://vk.com/horndron">
+                            <img src="images/vk.svg" alt="vk.com">
+                            <span>vkontakte</span>
+                        </a> 
+                    </li>
+                    <li class="item">
+                        <a class="link" href="https://github.com/horndron">
+                            <img src="images/github.svg" alt="github">
+                            <span>@horndron</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="skills" id="skills">
             <div class="container">
                 <h2>My skills</h2>
-                <div class="d-flex align-items-center">
-                   <div class="item">
+                <ul class="d-flex align-items-center">
+                   <li class="item">
                         <img src="images/html5.svg" alt="html logo">
                         <p>HTML</p>
-                   </div>
-                   <div class="item">
+                   </li>
+                   <li class="item">
                         <img src="images/css.svg" alt="css logo">
                         <p>CSS</p>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/js.png" alt="js logo">
                         <p>Js (basic)</p>
-                   </div>
-                   <div class="item">
+                   </li>
+                   <li class="item">
                         <img src="images/php.png" alt="php logo">
                         <p>PHP (basic)</p>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/ps.png" alt="photoshop logo">
                         <p>Photoshop (basic)</p>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/figma.png" alt="figma logo">
                         <p>Figma</p>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/drupal.svg" alt="drupal logo">
                         <p>Drupal</p>
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li class="item">
                         <img src="images/opencart.png" alt="opencart logo">
                         <p>Opencart</p>
-                    </div>
+                    </li>
 
-                </div>
+                </ul>
             </div>
         </section>
         <section id="video">
             <div class="container">
                 <h2>Video CV</h2>
-                <iframe width="800" height="450" src="https://www.youtube.com/embed/VB9Q2-OuOP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe src="https://www.youtube.com/embed/VB9Q2-OuOP8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
             </div>
         </section>
@@ -142,11 +154,11 @@ function highAndLow(numbers) {
     numbers = numbers.split(' ');
     let min = numbers[0];
     let max = numbers[0];
-    for (let i = 1; i < numbers.length; i++) {
+    for (let i = 1; i &lt; numbers.length; i++) {
       if (+numbers[i] > +max) {
         max = numbers[i];
       }
-      if (+numbers[i] < +min) {
+      if (+numbers[i] &lt; +min) {
         min = numbers[i];
       }
     }
@@ -181,17 +193,21 @@ function toJadenCase($string)
             <div class="container">
                 <h2>My project</h2>
                 <div class="d-flex">
-                    <a href="https://advotop.ru/" rel='nofollow'>
+                    <a href="https://advotop.ru/" rel='nofollow' target="_blank">
                         <img src="images/advokat.jpg" alt="advokat site">
+                        <p>Website of the rating of lawyers<br>(HTML, CSS, Drupal)</p>
                     </a>
-                    <a href="https://prosto-krd.ru/" rel='nofollow'>
+                    <a href="https://prosto-krd.ru/" rel='nofollow' target="_blank">
                         <img src="images/prosto.jpg" alt="ooo prost firm site">
+                        <p>Project company<br>(HTML, CSS, Drupal)</p>
                     </a>
-                    <a href="https://cppkkrd.ru/" rel='nofollow'>
+                    <a href="https://cppkkrd.ru/" rel='nofollow' target="_blank">
                         <img src="images/cppk.jpg" alt="cppk site">
+                        <p>Driving school<br>(HTML, CSS, Drupal)</p>
                     </a>
-                    <a href="https://xn--80abcmpacmb0ag3e.xn--p1ai/" rel='nofollow'>
+                    <a href="https://xn--80abcmpacmb0ag3e.xn--p1ai/" rel='nofollow' target="_blank">
                         <img src="images/veniki.jpg" alt="veniki site">
+                        <p>Online store of brooms for the bath<br>(HTML, CSS, JavaScript, PHP)</p>
                     </a>
                 </div>
             </div>
