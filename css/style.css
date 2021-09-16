@@ -247,28 +247,12 @@ footer .d-flex,
     margin-bottom: 30px;
 }
 
-
 @media (max-width:499px) {
     .skills .item { 
         width: 49.99%;
     }
 }
 
-<<<<<<< HEAD
-
-.courses,
-.code-example {
-
-}
-
-@media (max-width:499px) {
-    .skills .item { 
-        width: 49.99%;
-    }
-}
-
-=======
->>>>>>> 0d16598 (feat: add video section and styles for this block)
 iframe {
     display: block;
     max-width: 100%;
