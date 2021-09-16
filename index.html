@@ -125,7 +125,7 @@
         <section id="video">
             <div class="container">
                 <h2>Video CV</h2>
-                <iframe width="800" height="450" src="https://www.youtube.com/embed/VB9Q2-OuOP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                <iframe src="https://www.youtube.com/embed/VB9Q2-OuOP8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
             </div>
         </section>
@@ -142,11 +142,11 @@ function highAndLow(numbers) {
     numbers = numbers.split(' ');
     let min = numbers[0];
     let max = numbers[0];
-    for (let i = 1; i < numbers.length; i++) {
+    for (let i = 1; i &lt; numbers.length; i++) {
       if (+numbers[i] > +max) {
         max = numbers[i];
       }
-      if (+numbers[i] < +min) {
+      if (+numbers[i] &lt; +min) {
         min = numbers[i];
       }
     }
