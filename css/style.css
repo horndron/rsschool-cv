@@ -170,12 +170,16 @@ p.subtitle {
     font-size: 1.3em;
     font-style: italic;
 }
+.code-example,
 .works,
 .skills,
 #contacts {
     padding: 80px 0;
     color: #fff;
     background: #7A45D6;
+}
+#video {
+    padding: 80px 0;
 }
 h2 {
     margin-bottom: 60px;
@@ -249,17 +253,37 @@ footer .d-flex,
     }
 }
 
-.courses,
-.code-example {
+iframe {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width:767px) {
+     iframe {
+         height: 400px;
+     }
+}
+
+
+
+.courses {
     padding: 80px 0;
 }
 .code-example .item {
     width: 45%;
 }
+.code-example a {
+    color: #FFE840;
+    transition: 0.3s;
+}
+.code-example a:hover {
+    color: #000;
+}
 pre {
     margin: 10px 0;
     padding: 15px;
-    background: #eee;
+    background: #fff;
 }
 
 @media (max-width:767px) {
@@ -282,6 +306,10 @@ pre {
 
 h3 {
     margin-bottom: 10px;
+}
+
+.works {
+    background: #212121;
 }
 .works a {
     width: 31%;
@@ -316,7 +344,7 @@ h3 {
 footer {
     padding: 25px 0 10px;
     color: #fff;
-    background: #212121;
+    background: #7A45D6;
 }
 footer .github {
     display: flex;
