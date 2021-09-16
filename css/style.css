@@ -254,6 +254,7 @@ footer .d-flex,
     }
 }
 
+<<<<<<< HEAD
 
 .courses,
 .code-example {
@@ -266,6 +267,8 @@ footer .d-flex,
     }
 }
 
+=======
+>>>>>>> 0d16598 (feat: add video section and styles for this block)
 iframe {
     display: block;
     max-width: 100%;
