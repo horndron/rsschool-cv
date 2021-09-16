@@ -255,8 +255,11 @@ footer .d-flex,
 
 iframe {
     display: block;
+    width: 800px;
+    height: 450px;
     max-width: 100%;
     margin: 0 auto;
+    border: none;
 }
 
 @media (max-width:767px) {
